@@ -1,0 +1,31 @@
+.wishlist {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wishlist-item {
+    background-color: #1c1c1c;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.wishlist-item img {
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 8px;
+}
+
+.wishlist-item a {
+    color: #FF5722;
+    text-decoration: none;
+}
+
+.wishlist-item a:hover {
+    color: #E64A19;
+    text-decoration: underline;
+}

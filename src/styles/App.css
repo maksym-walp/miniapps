@@ -1,0 +1,43 @@
+.App {
+  text-align: center;
+  margin-top: 50px;
+}
+
+input {
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #FF5722;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #E64A19;
+}
+
+a {
+  color: #FF5722;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E64A19;
+  text-decoration: underline;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: white;
+}
