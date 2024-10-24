@@ -1,6 +1,18 @@
+/* Головний контейнер додатку */
 .App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Мінімальна висота сторінки = висоті екрану */
   text-align: center;
+}
+
+/* Контейнер для головного контенту */
+.content {
+  flex-grow: 1;
+  /* Контент буде займати весь доступний простір */
   margin-top: 50px;
+  /* Збережено відступ зверху */
 }
 
 input {
@@ -40,4 +52,44 @@ p {
   margin-top: 20px;
   font-size: 18px;
   color: white;
+}
+
+/* Стиль футера */
+.footer {
+  background-color: #1c1c1c;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #FF5722;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #E64A19;
+}
+
+/* Додаткові стилі для заголовків */
+h1 {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Загальна сітка для карток на сторінці */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.pageTitle {
+  color: black;
 }

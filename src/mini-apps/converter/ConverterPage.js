@@ -5,7 +5,7 @@ import ConverterApp from './ConverterComponent'; // Імпортуємо існ�
 const Converter = () => {
   return (
     <div>
-      <h1>Number System Converter</h1>
+      <h1 className='pageTitle'>Number System Converter</h1>
       <ConverterApp />
     </div>
   );

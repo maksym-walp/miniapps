@@ -5,7 +5,7 @@ import Wishlist from './Wishlist'; // Шлях до компонента віш�
 function WishlistPage() {
   return (
     <div>
-      <h1>Сторінка Вішлиста</h1>
+      <h1 className='pageTitle'>Сторінка Вішлиста</h1>
       <Wishlist />
     </div>
   );

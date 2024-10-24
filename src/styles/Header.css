@@ -1,0 +1,58 @@
+.header {
+  background-color: #1c1c1c;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #FF5722;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  color: #FF5722;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown>span {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #1c1c1c;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li {
+  padding: 12px 16px;
+  white-space: nowrap;
+  /* Забороняє переноси тексту */
+}
+
+.dropdown-content li a {
+  color: #FF5722;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content li a:hover {
+  background-color: #333;
+}

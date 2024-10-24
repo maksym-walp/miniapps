@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { caesarEncrypt, caesarDecrypt } from './CaesarScript';
 
-const CaesarCipher = () => {
+const CaesarComponent = () => {
   const [mode, setMode] = useState('encrypt'); // Шифрування за замовчуванням
   const [key, setKey] = useState(0);
   const [inputText, setInputText] = useState('');
@@ -10,7 +10,7 @@ const CaesarCipher = () => {
   const handleEncryptDecrypt = () => {
     const shift = parseInt(key, 10) % 33; // Використовуємо лише залишок для ключа в межах алфавіту
     let result;
-    
+
     if (mode === 'encrypt') {
       result = caesarEncrypt(inputText, shift);
     } else {
@@ -22,7 +22,6 @@ const CaesarCipher = () => {
 
   return (
     <div>
-      <h1>Caesar Cipher (Шифр Цезаря)</h1>
       <div>
         <label>Виберіть режим:</label>
         <select value={mode} onChange={(e) => setMode(e.target.value)}>
@@ -63,4 +62,4 @@ const CaesarCipher = () => {
   );
 };
 
-export default CaesarCipher;
+export default CaesarComponent;

@@ -13,7 +13,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      <h1>Small Apps</h1>
+      <h1 className='pageTitle'>Small Apps</h1>
       <div className="grid">
         {apps.map((app, index) => (
           <Card key={index} title={app.title} link={app.link} />
