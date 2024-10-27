@@ -1,18 +1,29 @@
 import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
-function AddItem({ onAdd }) {
-  const [name, setName] = useState('');
-  const [description, setDescription] = useState('');
-  const [imageUrl, setImageUrl] = useState('');
-  const [link, setLink] = useState('');
+function AddItem({ onAdd, existingItem, onSave }) {
+  const [name, setName] = useState(existingItem?.name || '');
+  const [description, setDescription] = useState(existingItem?.description || '');
+  const [imageUrl, setImageUrl] = useState(existingItem?.imageUrl || '');
+  const [link, setLink] = useState(existingItem?.link || '');
+  const [author, setAuthor] = useState(existingItem?.author || '');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onAdd({ name, description, imageUrl, link });
+    const newItem = {
+      id: existingItem?.id || uuidv4(),
+      name,
+      description,
+      imageUrl,
+      link,
+      author,
+    };
+    existingItem ? onSave(newItem) : onAdd(newItem);
     setName('');
     setDescription('');
     setImageUrl('');
     setLink('');
+    setAuthor('');
   };
 
   return (
@@ -44,7 +55,14 @@ function AddItem({ onAdd }) {
         onChange={(e) => setLink(e.target.value)}
         required
       />
-      <button type="submit">Додати</button>
+      <input
+        type="text"
+        placeholder="Автор"
+        value={author}
+        onChange={(e) => setAuthor(e.target.value)}
+        required
+      />
+      <button type="submit">{existingItem ? 'Зберегти' : 'Додати'}</button>
     </form>
   );
 }

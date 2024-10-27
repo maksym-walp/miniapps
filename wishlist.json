@@ -1,0 +1,38 @@
+[
+  {
+    "name": "КУРА 2",
+    "description": "D&D Колекція Українських Рольових Авантюр 2: Щуролови",
+    "imageUrl": "https://ihrova-maysternya.com/content/images/48/500x500l50nn0/knyzhka-kolektsiia-ukrainskykh-rolovykh-avantiur-ii-shchurolovy-15665847084858.png",
+    "link": "https://geekach.com.ua/kolektsiia-ukrainskykh-rolovykh-avantiur-2-shchurolovy/?srsltid=AfmBOooEsYyVYLkOYocpTNgMn-acTTRXQdHj-_nvnLyLUHazz2NriUku",
+    "author": "Лун"
+  },
+  {
+    "name": "Салем 1692",
+    "description": "Настільна гра схожа на мафію, проте з тематикою середньовіччя та відьом",
+    "imageUrl": "https://desktopgames.com.ua/games/7915/1_thumb_500x500.webp",
+    "link": "https://geekach.com.ua/salem-1692-salem-1692/",
+    "author": "Лун"
+  },
+  {
+    "name": "Fallout НРГ",
+    "description": "Настільна рольова гра по фолауту",
+    "imageUrl": "https://geekach.com.ua/content/images/22/536x398l99nn0/fallout.-nastolnaya-igra-47447578915870.jpg",
+    "link": "https://geekach.com.ua/fallout.-nastilna-rolova-hra-shvydkyi-start/",
+    "author": "Лун"
+  },
+  {
+    "name": "Нічник 02",
+    "description": "Та нащо вам той опис",
+    "imageUrl": "https://content.rozetka.com.ua/goods/images/big/196832598.jpg",
+    "link": "https://rozetka.com.ua/ua/281951653/p281951653/?utm_l=r&gad_source=1&gclid=Cj0KCQjwpvK4BhDUARIsADHt9sQzsTHaLOT6aIw78TWkBtTaEOyYJUUEDbXUdeLdYP2ekAjplVjHrkUaAlOsEALw_wcB",
+    "author": "Лун"
+  },
+  {
+    "id": "c95e6818-640a-455f-8649-9293e8294f76",
+    "name": "Тест 4",
+    "description": "Чомусь не додається елем ент",
+    "imageUrl": "1",
+    "link": "2",
+    "author": "Лун"
+  }
+]
