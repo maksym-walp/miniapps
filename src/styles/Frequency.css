@@ -1,0 +1,38 @@
+.frequency-analyzer {
+    margin: 20px;
+    text-align: center;
+}
+
+.frequency-analyzer textarea,
+.frequency-analyzer input {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+.frequency-analyzer button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.frequency-analyzer table {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.frequency-analyzer th,
+.frequency-analyzer td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.frequency-analyzer th {
+    background-color: #333;
+    color: white;
+}

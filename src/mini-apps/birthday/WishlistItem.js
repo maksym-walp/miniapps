@@ -1,6 +1,6 @@
 function WishlistItem({ item }) {
-  const truncatedDescription = item.description.length > 32
-    ? item.description.slice(0, 32) + "..." 
+  const truncatedDescription = item.description.length > 64
+    ? item.description.slice(0, 64) + "..." 
     : item.description;
 
   return (
